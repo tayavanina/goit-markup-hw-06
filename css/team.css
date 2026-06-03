@@ -1,0 +1,97 @@
+.team-section {
+  background-color: #f4f4fd;
+  padding: 120px 0; /* ← на секцію */
+}
+
+.team-container h2 {
+  margin-bottom: 72px;
+}
+
+.team-container ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-team {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.list-team img {
+  display: block; /* ← прибирає inline-прогалину */
+}
+
+.team-info {
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-section .list-team h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-section .list-team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+.team-section h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.container-icons-team {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+}
+.icon-link-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link-team:hover,
+.icon-link-team:focus {
+  background: #404bbf;
+}
