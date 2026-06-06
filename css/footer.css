@@ -185,7 +185,9 @@
     row-gap: 72px;
     column-gap: 24px;
     align-items: flex-start;
-    padding-left: 108px;
+    padding: 0px 108px;
+    width: 768px;
+    max-width: 1158px;
   }
 
   .footer-subscribe {
@@ -195,6 +197,9 @@
     gap: 16px;
     height: 80px;
     flex-wrap: wrap;
+  }
+  .footer-mail-input {
+    width: 264px;
   }
 
   .input-footer {
@@ -222,8 +227,6 @@
     padding: 0;
     row-gap: 0;
     width: 1158px;
-    max-width: 1158px;
-    height: 112px;
   }
 
   .footer-subscribe {

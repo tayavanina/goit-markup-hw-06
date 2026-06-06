@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
 }
 
@@ -61,7 +61,6 @@
   .text-features {
     flex-basis: calc((100% - 24px) / 2);
     align-items: flex-start;
-    justify-content: flex-start;
   }
   .feature-title {
     text-align: left;
@@ -97,9 +96,8 @@
   }
 
   .text-features {
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-basis: auto;
+    width: 264px;
+    max-width: 264px;
   }
   .feature-title {
     font-weight: 500;
