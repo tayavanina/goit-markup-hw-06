@@ -47,10 +47,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .features-section {
-    padding: 120px 0;
-  }
-
   .feature-list {
     display: flex;
     gap: 72px 24px;
@@ -67,9 +63,15 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+  .feature-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .features-section {
+    padding: 120px 0;
+  }
   .features-container .container-icons-features {
     display: flex;
     align-items: center;
@@ -96,7 +98,7 @@
 
   .text-features {
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     flex-basis: auto;
   }
   .feature-title {
