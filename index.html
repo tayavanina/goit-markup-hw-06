@@ -20,6 +20,7 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <!-- header -->
     <header id="header" class="header">
       <div class="container header-container">
         <div class="header-nav">
@@ -46,9 +47,17 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="btn-mobile-menu-open">
+          <svg width="17" height="15">
+            <use href="./images/icons.svg#icon-mobile-open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
+      <!-- hero -->
       <section class="hero-section" id="hero">
         <div class="container hero-container">
           <h1 class="title">Effective Solutions for Your Business</h1>
@@ -56,18 +65,19 @@
         </div>
       </section>
 
+      <!-- features -->
       <section class="features-section" id="features">
         <div class="container features-container">
           <h2 class="sr-only">Our features</h2>
-          <ul>
+          <ul class="feature-list">
             <li class="text-features">
               <div class="container-icons-features">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antena"></use>
                 </svg>
               </div>
-              <h3>Strategy</h3>
-              <p>
+              <h3 class="feature-title">Strategy</h3>
+              <p class="feature-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -78,8 +88,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3>Punctuality</h3>
-              <p>
+              <h3 class="feature-title">Punctuality</h3>
+              <p class="feature-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -90,8 +100,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3>Diligence</h3>
-              <p>
+              <h3 class="feature-title">Diligence</h3>
+              <p class="feature-description">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -102,8 +112,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3>Technologies</h3>
-              <p>
+              <h3 class="feature-title">Technologies</h3>
+              <p class="feature-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -111,20 +121,23 @@
           </ul>
         </div>
       </section>
+
+      <!-- team -->
       <section class="team-section" id="team">
         <div class="container team-container">
-          <h2>Our Team</h2>
-          <ul>
-            <li class="list-team">
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 height="260"
                 width="264"
               />
               <div class="team-info">
-                <h3>Mark Guerrero</h3>
-                <p>Product Designer</p>
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-description">Product Designer</p>
                 <ul class="container-icons-team">
                   <li>
                     <a class="icon-link-team" href="">
@@ -157,8 +170,9 @@
                 </ul>
               </div>
             </li>
-            <li class="list-team">
+            <li class="team-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
                 height="260"
@@ -199,8 +213,9 @@
                 </ul>
               </div>
             </li>
-            <li class="list-team">
+            <li class="team-item">
               <img
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 height="260"
@@ -241,8 +256,9 @@
                 </ul>
               </div>
             </li>
-            <li class="list-team">
+            <li class="team-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 height="260"
@@ -287,16 +303,21 @@
         </div>
       </section>
 
+      <!-- portfolio -->
       <section class="portfolio-section" id="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
-          <ul>
-            <li class="list-portfolio">
+          <ul class="portfolio-list">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   src="./images/portfolio-1.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-1"
                 />
                 <p class="overlay-portfolio">
@@ -310,12 +331,16 @@
                 <p class="text-list-portfolio">App</p>
               </div>
             </li>
-            <li class="list-portfolio">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   src="./images/portfolio-2.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-2"
                 />
                 <p class="overlay-portfolio">
@@ -329,12 +354,16 @@
                 <p class="text-list-portfolio">Marketing</p>
               </div>
             </li>
-            <li class="list-portfolio">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   src="./images/portfolio-3.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-3"
                 />
                 <p class="overlay-portfolio">
@@ -348,12 +377,16 @@
                 <p class="text-list-portfolio">App</p>
               </div>
             </li>
-            <li class="list-portfolio">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   src="./images/portfolio-4.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-4"
                 />
                 <p class="overlay-portfolio">
@@ -367,12 +400,16 @@
                 <p class="text-list-portfolio">Marketing</p>
               </div>
             </li>
-            <li class="list-portfolio">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   src="./images/portfolio-5.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-5"
                 />
                 <p class="overlay-portfolio">
@@ -386,12 +423,16 @@
                 <p class="text-list-portfolio">Design</p>
               </div>
             </li>
-            <li class="list-portfolio">
+            <li class="portfolio-items">
               <div class="img-wrapper">
                 <img
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@2x.jpg 2x
+                  "
                   src="./images/portfolio-6.jpg"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="240"
                   alt="portfolio-6"
                 />
                 <p class="overlay-portfolio">
@@ -409,6 +450,8 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
     <footer class="footer-section" id="footer">
       <div class="container footer-container">
         <div class="footer-logo-info">
@@ -474,6 +517,7 @@
       </div>
     </footer>
 
+    <!-- modal-window -->
     <div id="modal" class="modal-overlay">
       <div class="modal">
         <button type="button" class="icon-close">
@@ -553,6 +597,74 @@
 
           <button class="btn-send" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu">
+        <button type="button" class="btn-mobile-menu-close">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-mobile-close-menu"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu-nav-list">
+            <li>
+              <a
+                class="mobile-menu-navigation mobile-menu-active"
+                href="#features"
+                >Features</a
+              >
+            </li>
+            <li><a class="mobile-menu-navigation" href="#team">Team</a></li>
+            <li>
+              <a class="mobile-menu-navigation" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-contacts-links-container">
+          <address>
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-contacts-items mobile-menu-active">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mobile-menu-contacts-items">
+                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-container-icons">
+            <li>
+              <a class="mobile-menu-icon-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="mobile-menu-icon-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="mobile-menu-icon-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="mobile-menu-icon-link" href="">
+                <svg width="24" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

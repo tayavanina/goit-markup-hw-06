@@ -1,37 +1,37 @@
 .hero-section {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
   background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
 .hero-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 48px;
+  gap: 72px;
   text-align: center;
-  /* прибрано padding */
+  padding: 0 15px;
 }
 
 .title {
-  color: #ffffff;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07143;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
-  max-width: 496px; /* ← додано */
+  color: #fff;
+  width: 216px;
 }
 
 .button-order {
@@ -56,4 +56,93 @@
 .button-order:focus {
   background-color: #404bbf;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/hero-bg-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/hero-bg-tab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/hero-bg-desk@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 56px;
+
+    /* line-height: 60px; */
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    width: 496px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/hero-bg-desk.jpg);
+  }
+
+  .hero-container {
+    gap: 48px;
+  }
 }
