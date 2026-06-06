@@ -93,6 +93,8 @@
   font-weight: 700;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .navigation.active {

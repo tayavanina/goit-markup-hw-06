@@ -176,7 +176,18 @@
 .btn-subs:focus {
   background: #31d0aa;
 }
+.logo-footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 16px;
+  color: #f4f4fd;
+}
 
+.accent-web-footer {
+  color: #4d5ae5;
+}
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -185,9 +196,9 @@
     row-gap: 72px;
     column-gap: 24px;
     align-items: flex-start;
-    padding: 0px 108px;
-    width: 768px;
-    max-width: 1158px;
+    padding: 0;
+    max-width: 584px;
+    margin: 0 auto;
   }
 
   .footer-subscribe {
@@ -223,10 +234,10 @@
   .footer-container {
     flex-wrap: nowrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
     row-gap: 0;
-    width: 1158px;
+    max-width: 1158px;
   }
 
   .footer-subscribe {
